@@ -1,0 +1,214 @@
+/* 🎨 Modern Gradient Background */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #141e30, #243b55, #f8cdda, #ff758c);
+    background-size: 400% 400%;
+    animation: bgAnimation 15s infinite alternate;
+    color: white;
+    transition: background 0.5s ease-in-out, color 0.3s;
+}
+
+/* 🌈 Smooth Background Animation */
+@keyframes bgAnimation {
+    0% { background-position: left top; }
+    100% { background-position: right bottom; }
+}
+
+/* 🎯 Title & Headers */
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #ff758c, #ff7eb3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* 🌟 Neumorphic Glass Effect */
+.glass {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), -4px -4px 10px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.glass:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* ✅ Summary Cards with Hover Effects */
+.summary-card {
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 🌀 Floating Card Effect */
+.summary-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* 🎨 Smooth Color Blends */
+.income {
+    background: linear-gradient(135deg, #1dc8cd, #55e3e3);
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.5);
+}
+
+.expense {
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    box-shadow: 0 4px 15px rgba(255, 100, 50, 0.5);
+}
+
+.savings {
+    background: linear-gradient(135deg, #6a11cb, #ffaf7b);
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5);
+}
+
+/* 🌓 Dark Mode */
+body.dark-mode {
+    background: #121212;
+    color: #f0f0f0;
+}
+
+.dark-mode .glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+}
+
+.dark-mode .summary-card {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* 🌙 Dark Mode Toggle */
+.mode-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.mode-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .mode-toggle {
+    background: #333;
+    color: white;
+}
+
+/* ✅ Stylish Animated Buttons */
+.btn-primary {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #764ba2, #667eea);
+    transform: scale(1.08);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 🎬 Table Row Animation */
+#transactionTableBody tr {
+    opacity: 0;
+    transform: translateY(15px);
+    animation: fadeInUp 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🔥 Hover Effects for Table */
+.neon-table tr:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transition: background 0.3s ease-in-out;
+}
+
+/* 🎯 Input Fields with Glow Effect */
+.neon-input {
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.neon-input:focus {
+    outline: none;
+    border-color: #ff7eb3;
+    box-shadow: 0 0 10px rgba(255, 126, 179, 0.6);
+}
+
+/* 🌟 Animated Headers */
+h4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff758c, #ff7eb3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 💰 Currency & Amount Styling */
+#totalIncome, #totalExpense, #totalBalance {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.income-text {
+    color: green;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.expense-text {
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+input::placeholder {
+    color: white !important;
+    opacity: 1; /* Ensure it stays fully visible */
+}
+
+input {
+    color: white; /* Text color */
+    background: rgba(255, 255, 255, 0.2); /* Light transparent background */
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.3); /* Slightly brighter on focus */
+}
